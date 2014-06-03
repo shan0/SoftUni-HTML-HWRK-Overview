@@ -4,7 +4,13 @@ div, p, ul, h1 {
     padding: 0px;
 }
 
-/** div container */
+/*we set the font for the entire page*/
+body {
+    color: white;
+    font-family: Calibri;
+}
+
+/** div container - contains the slide itself*/
 #container {
     background-image:url('../images/05-background.jpg');
     background-repeat: repeat-y;
@@ -14,21 +20,22 @@ div, p, ul, h1 {
     padding-left: 20px;
     padding-top:20px;
 }
+
+/*the heading of the slide*/
     #container header{
-        color: #ffd069;
-        font-family: Calibri;
         font-size: x-large;
+        color: #ffd069;
         margin-left: 20px;
     }
 
     #container ul {
         color:white;
-        font-family:Calibri;
         font-size: xx-large;
         list-style:none;
         margin-left: 60px;
     }
 
+    /*we set the square bullets*/
         #container ul li:before {
             content:"■ ";
             color: #f2b254;
@@ -36,8 +43,9 @@ div, p, ul, h1 {
             vertical-align:middle;
         }
 
+        /*here we manage the three rectangles with info*/
         #container ul li div {
-            background-color: rgba(128,128,128,0.4);
+            background-color: rgba(128,128,128,0.4); /*we add transparency "a" stands for "alpha"*/
             border:solid;
             border-color: white;
             border-width: 1px;
@@ -64,7 +72,6 @@ div, p, ul, h1 {
 
         #container ul li span {
             color: #ffd069;
-            font-family: Calibri;
             font-size: xx-large;
             font-weight:bolder;
         }
